@@ -1,0 +1,117 @@
+
+
+:root{
+  --primary-color: #222222;
+  --secondary-color: #FFFFFF;
+  --title-color: #FF9209;
+  --lightTitle-color: #FFFFFF;
+}
+
+.light-theme{
+  --secondary-color: #222222;
+  --primary-color: #FFFFFF;
+  --title-color: #222222;
+  --lightTitle-color: #FF9209;
+
+}
+
+#modes{
+  height: 997px;
+  background: var(--primary-color);
+  .modes{
+    &__dark{
+      padding-top: 102px;
+      font-family: $font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: var(--secondary-color);
+    }
+    &__title{
+      margin-top: 4px;
+      font-family: $font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+
+      color: var(--secondary-color);
+      &__dark{
+        color: #FF9209;
+      }
+    }
+    &__subtitle{
+      margin: 15px auto;
+      width: 590px;
+      font-family: $font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+
+      text-align: center;
+
+      color: var(--secondary-color);
+    }
+    &__change{
+      text-align: center;
+      &__img{
+        margin-top: 20px;
+        text-align: center;
+      }
+      &__types{
+        border-top: 1px solid var(--secondary-color);;
+        margin: -6px auto;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__light{
+          margin: 43px 21px;
+          text-align: center;
+          &__icon{
+            text-align: center;
+          }
+          &__title{
+            font-family: $font-stack;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: var(--lightTitle-color);
+          }
+        }
+        &__dark {
+          margin: 43px 21px;
+          text-align: center;
+          &__icon{
+            text-align: center;
+          }
+          &__title{
+            font-family: $font-stack;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: var(--title-color);
+          }
+        }
+      }
+    }
+  }
+}

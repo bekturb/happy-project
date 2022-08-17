@@ -1,0 +1,172 @@
+
+%tariff-shared{
+  margin: 30px 9px;
+  width: 379px;
+  height: 338px;
+  background: #F2F2F2;
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+%title--shared{
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+  color: $calendar__view;
+}
+
+%button-shared{
+  margin-top: 20px;
+  padding: 11px 25px;
+  border: none;
+  border-radius: 4px;
+  background: $calendar__view;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: $time--color;
+}
+
+
+#plan{
+  padding-bottom: 68px;
+  .plan{
+    &__info{
+      margin: 0 auto;
+      width: 1187px;
+      &__price{
+        margin-top: 99px;
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        color: $main-color;
+      }
+      &__title{
+        margin-top: 5px;
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+
+        color: $main-color;
+      }
+      &__subtitle{
+        margin: 12px auto;
+        width: 568px;
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        /* or 133% */
+
+        text-align: center;
+
+        color: $nav--items;
+      }
+      &__standard{
+       @extend %tariff-shared;
+        &__main{
+          padding-top: 49px;
+          @extend %title--shared;
+        }
+        &__title{
+          margin-top: -11px;
+          @extend %title--shared;
+          font-size: 108px;
+          line-height: 124px;
+          letter-spacing: 8px;
+        }
+        &__monthly{
+          margin-top: -51px;
+          @extend %title--shared;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $main-color;
+        }
+        &__btn{
+          @extend %button-shared;
+        }
+      }
+      &__premium{
+        @extend %tariff-shared;
+        &__main{
+          padding-top: 49px;
+          @extend %title--shared;
+          color: $lists;
+        }
+        &__title{
+          margin-top: -11px;
+          @extend %title--shared;
+          font-size: 108px;
+          line-height: 124px;
+          letter-spacing: 8px;
+          color: $lists;
+        }
+        &__monthly{
+          margin-top: -51px;
+          @extend %title--shared;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $main-color;
+        }
+        &__btn{
+          background:$lists;
+          @extend %button-shared;
+        }
+      }
+      &__life{
+        @extend %tariff-shared;
+        &__main{
+          padding-top: 49px;
+          @extend %title--shared;
+          color: $varied;
+        }
+        &__title{
+          margin-top: -11px;
+          @extend %title--shared;
+          font-size: 108px;
+          line-height: 124px;
+          letter-spacing: 8px;
+          color: $varied;
+        }
+        &__monthly{
+          margin-top: -51px;
+          @extend %title--shared;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $main-color;
+        }
+        &__btn{
+          @extend %button-shared;
+          background:$varied;
+        }
+      }
+    }
+  }
+}

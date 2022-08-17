@@ -1,0 +1,742 @@
+
+@media only screen and (max-width: 1200px){
+  .container{
+    max-width: 1030px;
+  }
+
+  //RECOMMEND
+
+  //#recommend .recommend__img {
+  //
+  //  margin-top: -93px;
+  //}
+  //RECOMMEND
+
+  //FEATURES
+
+  #features .features__services__info {
+    width: 300px;
+  }
+
+  //FEATURES
+
+  //PLAN
+
+  #plan .plan__info {
+    width: auto;
+  }
+  #plan .plan__info__life, #plan .plan__info__premium, #plan .plan__info__standard {
+    width: 300px;
+  }
+
+#plan .plan__info__standard__title,
+#plan .plan__info__premium__title,
+#plan .plan__info__life__title{
+  font-size: 80px;
+  }
+
+  //PLAN
+
+}
+
+
+@media only screen and (max-width: 1024px){
+  .container{
+    max-width: 992px;
+  }
+}
+
+
+@media only screen and (max-width: 992px){
+  .container{
+    max-width: 830px;
+  }
+
+  //HEADER
+
+  #header .header__nav__list__items {
+    margin: 0 15px;
+  }
+
+  #header .header__nav__list__items__button {
+    padding: 4px 22px;
+    font-size: 12px;
+  }
+
+  #hero .hero__card__time__items__title {
+     margin-right: 20px;
+    font-size: 19px;
+  }
+
+  //HEADER
+
+
+  //HERO
+
+  #hero .hero__card__title {
+    font-size: 40px;
+  }
+
+
+  #hero .hero__card__subtitle {
+    font-size: 26px;
+  }
+
+  #hero .hero__card__time__items__item {
+    font-size: 68px;
+  }
+  //HERO
+
+
+  //RECOMMEND
+
+  #recommend{
+    height: 523px;
+  }
+  #recommend .recommend__logo__item {
+    width: 158px;
+  }
+
+  #recommend .recommend__title {
+    width: 380px;
+    font-size: 40px;
+  }
+
+  #recommend .recommend__subtitle {
+    width: 369px;
+    font-size: 15px;
+  }
+
+  #recommend .recommend__img {
+    width: 257px;
+    margin-top: -85px;
+  }
+
+  //RECOMMEND
+
+  //FEATURES
+
+  #features{
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+  #features .features__services__info {
+    width: 380px;
+  }
+  .features__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .features__column{
+    width: 50%;
+  }
+
+  //FEATURES
+
+  //PERCENTAGE
+
+  #percentage .percentage__picture__analyze {
+    font-size: 75px;
+  }
+  #percentage .percentage__picture__subtitle {
+    font-size: 12px;
+  }
+
+  //PERCENTAGE
+
+  //PLAN
+
+  #plan .plan__info__life, #plan .plan__info__premium, #plan .plan__info__standard {
+    width: 250px;
+  }
+
+  #plan .plan__info__standard__title, #plan .plan__info__premium__title, #plan .plan__info__life__title {
+    font-size: 70px;
+  }
+  #plan .plan__info__standard__main,
+  #plan .plan__info__premium__main,
+  #plan .plan__info__life__main,
+  {
+    font-size: 14px;
+  }
+
+
+  #plan .plan__info__standard__monthly,
+  #plan .plan__info__premium__monthly,
+  #plan .plan__info__life__monthly,
+  {
+    font-size: 12px;;
+  }
+  //PLAN
+
+}
+
+
+@media only screen and (max-width: 820px){
+  .container{
+    max-width: 780px;
+  }
+
+  //RECOMMEND
+
+  #recommend .recommend__title {
+    width: 300px;
+    font-size: 32px;
+  }
+
+  #recommend .recommend__subtitle {
+    width: 330px;
+    font-size: 14px;
+  }
+
+  #recommend .recommend__buttons__btn {
+    width: 134px;
+    height: 36px;
+  }
+
+  //RECOMMEND
+
+  #features .features__services__info {
+    width: 95%;
+  }
+
+  //FEATURES
+
+  //PERCENTAGE
+
+  #percentage .percentage__picture__analyze {
+    font-size: 55px;
+  }
+  #percentage .percentage__picture__subtitle {
+    font-size: 11px;
+  }
+  //PERCENTAGE
+
+  //MODES
+
+  #modes {
+     height: auto;
+    background: #222222;
+  }
+
+  #modes .modes__title {
+    font-size: 28px;
+  }
+
+  #modes .modes__subtitle {
+    font-size: 16px;
+  }
+
+
+  #modes .modes__change__img {
+    width: 300px;
+  }
+  #modes .modes__change__types {
+    width: 500px;
+  }
+  //MODES
+
+  //PLAN
+
+  .plan__column{
+    margin: 0 auto;
+    width: auto;
+  }
+
+  #plan .plan__info__standard,
+  #plan .plan__info__premium,
+  #plan .plan__info__life,
+  {
+    width: 350px;
+  }
+
+  #plan .plan__info__standard__main, #plan .plan__info__premium__main, #plan .plan__info__life__main {
+    font-size: 18px;
+  }
+
+  #plan .plan__info__standard__title, #plan .plan__info__premium__title, #plan .plan__info__life__title {
+    font-size: 85px;
+  }
+
+
+  #plan .plan__info__standard__monthly, #plan .plan__info__premium__monthly, #plan .plan__info__life__monthly {
+    font-size: 15px;
+  }
+
+
+  //PLAN
+
+}
+
+
+@media only screen and (max-width: 770px){
+  .container{
+    max-width: 610px;
+  }
+
+  //HEADER
+
+  #header .header__nav__navMenu__bar {
+    margin: 0 30px;
+  }
+
+  #header .header__nav{
+    margin: 0 30px;
+  }
+
+  #header .header__nav__list {
+    position: fixed;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    gap: 0;
+    display: block;
+    background-color:  #FFFFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  #header .header__nav__list__items{
+    margin: 20px 0;
+  }
+
+  .header__nav__list__items__item__logo{
+    margin-top: 72px;
+  }
+
+  #header .header__nav__list__items__button {
+    margin-top: 36px;
+  }
+
+  #header .header__nav__list__items__item{
+    font-size: 22px;
+  }
+
+  #header .header__nav__list.active{
+    left: 0;
+  }
+
+
+  #header .header__nav__navMenu {
+    display: block;
+  }
+
+  .navbar__logo {
+    display: block;
+  }
+
+  #header .header__nav__list__items__item {
+    font-size: 15px;
+  }
+  //HEADER
+
+  //HERO
+
+  #hero .hero__card__time {
+     width: auto;
+  }
+
+  #hero .hero__card__title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  #hero .hero__card__subtitle {
+    font-size: 23px;
+    font-weight: 600;
+  }
+
+  #hero .hero__card__time__items__item {
+    font-size: 52px;
+  }
+  #hero .hero__card__time__items__title {
+    margin-right: 20px;
+    font-size: 15px;
+  }
+
+  //HERO
+
+  .recommend__row--items{
+    display: block;
+  }
+
+  //RECOMMEND
+
+  #recommend {
+    height: 1081px;
+  }
+
+  #recommend .recommend__logo__item {
+    margin-top: 70px;
+     margin-left: 0;
+    width: 192px;
+  }
+
+  .recommend__column {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #recommend .recommend__title {
+     width: auto;
+    margin-left: 0;
+    font-size: 39px;
+  }
+
+  #recommend .recommend__subtitle {
+     width: auto;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  #recommend .recommend__buttons {
+    margin-left: 0;
+  }
+
+  #recommend .recommend__img {
+    width: auto;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+
+  .recommend__column2{
+    margin: 0 125px;
+  }
+
+  //RECOMMEND
+
+  //FEATURES
+
+  #features .features__subtitle {
+    font-size: 23px;
+  }
+
+  #features .features__services__info__items__calendar,
+  #features .features__services__info__items__lists,
+  #features .features__services__info__items__varied,
+  #features .features__services__info__items__screen,
+  #features .features__services__info__items__uploads,
+  #features .features__services__info__items__mode
+  {
+    font-size: 20px;
+  }
+
+  #features .features__services__info__items__subtitle {
+    font-size: 13px;
+  }
+
+  //FEATURES
+
+  //PERCENTAGE
+  #percentage{
+    height: auto;
+    padding-bottom: 24px;
+  }
+  .percentage__row{
+    display: block;
+  }
+
+  #percentage .percentage__picture__analyze {
+    font-size: 95px;
+    margin-top: 0;
+    padding-top: 90px;
+  }
+
+  #percentage .percentage__picture__subtitle {
+    font-size: 15px;
+  }
+
+  .percentage__columns{
+    width: auto;
+  }
+
+  //PERCENTAGE
+
+  //MODES
+
+  #modes .modes__subtitle {
+    width: 490px;
+  }
+
+  #modes .modes__change__img {
+    width: 250px;
+  }
+  #modes .modes__change__types {
+    width: 400px;
+  }
+  #modes .modes__change__types__light__title,
+  #modes .modes__change__types__dark__title
+  {
+    font-size: 12px;
+  }
+
+  //MODES
+
+
+
+  //PLAN
+
+  #plan .plan__info__subtitle {
+    margin: 19px auto;
+    width: 492px;
+  }
+
+  #plan .plan__info__standard,
+  #plan .plan__info__premium,
+  #plan .plan__info__life,
+  {
+    width: 270px;
+  }
+
+  #plan .plan__info__standard__main, #plan .plan__info__premium__main, #plan .plan__info__life__main {
+    font-size: 16px;
+  }
+
+  #plan .plan__info__standard__title, #plan .plan__info__premium__title, #plan .plan__info__life__title {
+    font-size: 75px;
+  }
+
+
+  //PLAN
+
+  //FOOTER
+
+
+  #footer {
+    padding-bottom: 20px;
+  }
+
+  #footer .footer__logo {
+    width: 100px;
+  }
+
+  //FOOTER
+
+}
+
+
+@media only screen and (max-width: 600px){
+  .container{
+    max-width: 490px;
+  }
+
+  //HERO
+
+  #hero .hero__card__title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  #hero .hero__card__subtitle {
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  #hero .hero__card__time__items__item {
+    font-size: 35px;
+  }
+
+  //HERO
+
+
+  //RECOMMEND
+  #recommend .recommend__img {
+    width: auto;
+    margin-top: 100px;
+    margin-left: -62px;
+  }
+
+  #recommend {
+    height: 1219px;
+  }
+
+  //RECOMMEND
+
+  //FEATURES
+
+  .features__row{
+    display: block;
+  }
+
+  .features__column{
+    width: 88%;
+    margin: 16px auto;
+  }
+
+  #features .features__subtitle {
+    width: 400px;
+    font-size: 20px;
+  }
+  //FEATURES
+
+
+  //MODES
+
+  #modes .modes__dark {
+    font-size: 12px;
+  }
+
+  #modes .modes__title {
+    font-size: 23px;
+  }
+
+  #modes .modes__subtitle {
+    width: 390px;
+    font-size: 14px;
+  }
+
+  #modes .modes__change__img {
+    width: 225px;
+  }
+
+  #modes .modes__change__types {
+    width: 350px;
+  }
+
+  #modes .modes__change__types__dark__icon,
+  #modes .modes__change__types__light__icon
+  {
+    width: 18px;
+    text-align: center;
+  }
+  //MODES
+
+  //PLAN
+
+  #plan .plan__info__subtitle {
+    margin: 19px auto;
+    width: 392px;
+  }
+
+  #plan .plan__info__standard, #plan .plan__info__premium, #plan .plan__info__life {
+    width: 350px;
+  }
+
+  //PLAN
+
+
+}
+
+
+@media only screen and (max-width: 480px){
+  .container{
+    max-width: 330px;
+  }
+
+//HEADER
+
+  #header .header__nav {
+    margin: 0;
+  }
+//HEADER
+
+
+  //HERO
+
+  #hero .hero__card__title {
+    font-size: 19px;
+  }
+
+  #hero .hero__card__subtitle {
+    font-size: 17px;
+  }
+
+  #hero .hero__card__time__items__item {
+    font-size: 22px;
+  }
+
+  #hero .hero__card__time__items__title {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  #hero .hero__card__time__items__item__line {
+    margin: 0 15px;
+  }
+
+  //HERO
+
+  //RECOMMEND
+
+  #recommend {
+    height: 967px;
+  }
+
+  #recommend .recommend__logo__item {
+    width: 152px;
+  }
+
+  #recommend .recommend__img {
+    width: 233px;
+    margin-top: 100px;
+    margin-left: -74px;
+  }
+
+
+  #recommend .recommend__title {
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  #recommend .recommend__subtitle {
+    font-size: 14px;
+  }
+  //RECOMMEND
+
+  //FEATURES
+
+  #features .features__subtitle {
+    width: 300px;
+  }
+
+  //FEATURES
+
+  //PERCENTAGE
+
+  #percentage .percentage__picture__analyze {
+    font-size: 80px;
+  }
+
+  //PERCENTAGE
+
+
+  //MODES
+
+  #modes .modes__title {
+    font-size: 20px;
+  }
+
+  #modes .modes__subtitle {
+    width: 270px;
+    font-size: 12px;
+  }
+
+  #modes .modes__change__img {
+    width: 200px;
+  }
+
+  #modes .modes__change__types {
+    width: 268px;
+  }
+
+  //MODES
+
+  //PLAN
+
+  #plan .plan__info__title {;
+    font-size: 24px;
+  }
+
+  #plan .plan__info__subtitle {
+    width: 292px;
+    font-size: 14px;
+  }
+
+
+  #plan .plan__info__standard, #plan .plan__info__premium, #plan .plan__info__life {
+    width: 290px;
+  }
+  //PLAN
+}

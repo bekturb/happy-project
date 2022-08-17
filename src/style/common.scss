@@ -1,0 +1,19 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-2{
+  width: 50%;
+}
+
+.col-3{
+  width: 33.33333%;
+}

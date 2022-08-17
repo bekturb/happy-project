@@ -1,0 +1,140 @@
+
+
+#features{
+  height: 1338px;
+  background: $main-color;
+  .features{
+    &__title{
+      padding-top: 100px;
+      font-family: $font-stack;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: $time--color;
+    }
+    &__subtitle{
+      margin: 5px auto;
+      width: 500px;
+      font-family: $font-stack;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+
+      text-align: center;
+
+      color: $time--color;
+    }
+    &__services{
+      margin-top: 28px;
+      margin-left: 17px;
+      &__info{
+        margin-top: 16px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        width: 379px;
+        height: 490px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        z-index: 1;
+        &__img{
+          position: absolute;
+          z-index: 2;
+        }
+        &__items{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 197px;
+          background: #F2F2F2;
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+          border-radius: 0 0 20px 20px;
+          z-index: 3;
+          &__icon{
+            position: absolute;
+            margin-top: -200px;
+          }
+          &__calendar{
+            margin-bottom: 10px;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+
+            color: $calendar__view;
+          }
+          &__lists{
+            margin-bottom: 10px;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+
+            color: $lists;
+          }
+          &__varied{
+            margin-bottom: 10px;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+
+            color: $varied;
+          }
+          &__screen{
+            margin-bottom: 10px;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+
+            color: $split-screen;
+          }
+          &__uploads{
+            margin-bottom: 10px;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+
+            color: $upload--color;
+          }
+          &__mode{
+            margin-bottom: 10px;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+
+            color: $focus--color;
+          }
+          &__subtitle{
+            margin-bottom: -10px;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+
+            text-align: center;
+
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+
+
+#footer{
+  height: 427px;
+  background: #F2F2F2;
+  .footer{
+    text-align: center;
+    margin: 0 auto;
+    &__logo{
+      padding-top: 124px;
+    }
+
+    &__contact{
+      margin-top: 23px;
+      &__icon{
+        margin: 0 9px;
+        &:hover{
+          .footer__contact__icon__item{
+            fill: #5AB0FF;;
+          }
+        }
+
+
+      }
+    }
+  }
+}

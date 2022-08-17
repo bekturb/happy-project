@@ -1,0 +1,37 @@
+
+#percentage{
+  height: 316px;
+  background: #FF5437;
+  .percentage{
+    &__picture{
+      &__analyze{
+        margin-top: 80px;
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 96px;
+        /* identical to box height, or 100% */
+
+        text-align: center;
+
+        color: $time--color;
+      }
+      &__subtitle{
+        margin-top: -45px;
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        color: $time--color;
+      }
+    }
+  }
+}
