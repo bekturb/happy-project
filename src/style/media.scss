@@ -616,6 +616,18 @@
 
   //PLAN
 
+  //MODAL
+
+  .modal__container {
+    width: 406px;
+  }
+
+  .modal__form__button {
+    margin: 26px 100px;
+  }
+
+    //MODAL
+
 
 }
 
@@ -739,4 +751,38 @@
     width: 290px;
   }
   //PLAN
+
+  //MODAL
+
+  .modal__container {
+    width: 310px;
+  }
+
+  .modal__header__title {
+    padding-left: 10px;
+  }
+
+  .modal__form__input__name,
+  .modal__form__input__email
+  {
+    width: 270px;
+  }
+
+  .modal__form__plan__choice .life, .modal__form__plan__choice .premium, .modal__form__plan__choice .standart {
+    width: 270px;
+  }
+
+  .modal__form__plan {
+    width: 270px;
+  }
+
+  .modal__form__plan__guest {
+    margin: 8px 100px;
+  }
+
+  .modal__form__button {
+    margin: 26px 60px;
+  }
+  //MODAL
+
 }

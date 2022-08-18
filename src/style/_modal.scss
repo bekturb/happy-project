@@ -1,5 +1,23 @@
 
+%input-modal{
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-indent: 20px;
+  color: #000000;
+}
 
+%placeholder{
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-indent: 20px;
+  color: #7D7D7D;
+}
 %button-modal{
   margin: 10px 0;
   display: flex;
@@ -25,7 +43,6 @@
 
 #modal{
 
-
 }
   .modal{
     position: fixed;
@@ -40,11 +57,12 @@
     z-index: 5;
 
     &__container{
-      max-height: 80vh;
+      margin-top:  100px;
+      padding-bottom: 30px;
+      max-height: 75vh;
       position: relative;
       overflow-y: auto;
       width: 506px;
-      margin: auto;
       background: #FFFFFF;
       border-radius: 4px;
     }
@@ -69,7 +87,7 @@
       }
     }
     &__form{
-      margin: 40px auto;
+      margin-top: 40px;
       &__input{
         .input{
           display: flex;
@@ -89,15 +107,11 @@
           background: #F2F2F2;
           border-radius: 4px;
           border: none;
+          @extend %input-modal
 
-          font-family: $font-stack;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          text-indent: 20px;
-
-          color: #7D7D7D;
+        }
+        &__name::placeholder{
+          @extend %placeholder
         }
         &__error{
           display: none;
@@ -118,15 +132,10 @@
           background: #F2F2F2;
           border-radius: 4px;
           border: none;
-
-          font-family: $font-stack;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          text-indent: 20px;
-
-          color: #7D7D7D;
+          @extend %input-modal
+        }
+        &__email::placeholder{
+          @extend %placeholder
         }
         &__error__email{
           display: none;
@@ -135,7 +144,6 @@
           font-weight: 400;
           font-size: 12px;
           line-height: 18px;
-          /* identical to box height */
 
 
           color: #FF5437;
@@ -267,10 +275,6 @@
       }
     }
     &__loading{
-      position: absolute;
-      right: 0;
-      bottom: -155px;
-      left: 0;
       display: flex;
       justify-content: center;
       align-items: center;

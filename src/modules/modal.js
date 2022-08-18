@@ -91,18 +91,23 @@ function checkInputs () {
     if (nameValue === '') {
         validate = false
         nameError.style.display = 'block'
+        formName.style.background = "#FFEEEE";
 
     } else {
         validate = true
         nameError.style.display = 'none'
+        formName.style.background = "#F2F2F2";
     }
 
     if (emailValue === '') {
         validate = false
         emailError.style.display = 'block'
+        formEmail.style.background = "#FFEEEE";
+
     } else {
         validate = true
         emailError.style.display = 'none'
+        formEmail.style.background = "#F2F2F2";
     }
 }
 

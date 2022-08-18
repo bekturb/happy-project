@@ -8,9 +8,9 @@
   border-radius: 0;
   transition: .6s ease;
 
-  //&.sticky{
-  //  position: fixed;
-  //}
+  &.sticky{
+    position: fixed;
+  }
   .header{
     position: relative;
     &__nav{
