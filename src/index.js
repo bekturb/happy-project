@@ -106,3 +106,21 @@ function displayDate (){
 }
 setInterval(displayDate,10)
 // HERO
+
+
+// MODAL
+
+const modal = document.querySelector('#modal')
+const buy = document.querySelector('.recommend__buttons__btn')
+const modalClose = document.querySelector('.modal__header__close')
+
+
+buy.addEventListener('click', () => {
+    modal.style.display = 'flex'
+})
+
+modalClose.addEventListener('click', () => {
+    modal.style.display = 'none'
+})
+
+// MODAL
