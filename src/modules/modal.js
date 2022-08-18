@@ -81,6 +81,8 @@ form.addEventListener('submit', (e) => {
        setTimeout(()=> {
            loader.style.visibility = 'hidden'
        },2000)
+       formName.value = ''
+       formEmail.value = ''
    }
 })
 
