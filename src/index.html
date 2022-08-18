@@ -97,7 +97,7 @@
                     <h3 class="recommend__title">The future of digital photos.</h3>
                     <p class="recommend__subtitle">The H(app)y app is the latest & greatest in phone photography. It's available in the App Store right now. Go check it out!</p>
                     <div class="recommend__buttons">
-                        <button class="recommend__buttons__btn">buy now</button>
+                        <button data-tariff="Lifetime" class="recommend__buttons__btn">buy now</button>
                         <button class="recommend__buttons__btn">Read more</button>
                     </div>
                 </div>
@@ -251,7 +251,7 @@
                             <p class="plan__info__standard__main">Standard</p>
                             <h1 class="plan__info__standard__title">$9</h1>
                             <p class="plan__info__standard__monthly">Monthly</p>
-                            <button class="plan__info__standard__btn">Buy now</button>
+                            <button value="Standart" class="plan__info__standard__btn">Buy now</button>
                         </div>
                     </div>
                     <div class="col-3 plan__column">
@@ -259,7 +259,7 @@
                             <p class="plan__info__premium__main">Premium</p>
                             <h1 class="plan__info__premium__title">$99</h1>
                             <p class="plan__info__premium__monthly">Annually</p>
-                            <button class="plan__info__premium__btn">Buy now</button>
+                            <button value="Premium" class="plan__info__premium__btn">Buy now</button>
                         </div>
                     </div>
                     <div class="col-3 plan__column">
@@ -267,7 +267,7 @@
                             <p class="plan__info__life__main">Lifetime</p>
                             <h1 class="plan__info__life__title">$149</h1>
                             <p class="plan__info__life__monthly">up front</p>
-                            <button class="plan__info__life__btn">Buy now</button>
+                            <button value="Lifetime" class="plan__info__life__btn">Buy now</button>
                         </div>
                     </div>
                 </div>
@@ -301,37 +301,43 @@
     <div class="container">
         <div class="modal__container">
             <div class="modal__header">
-                <h2 class="modal__header__title">Leave a request for the purchase of goods</h2>
+                <h2 class="modal__header__title">Leave a request for the <br> purchase of goods</h2>
                 <img class="modal__header__close" src="./img/modal__close.svg" alt="">
             </div>
-            <form class="modal__form" action="">
+            <form id="modal--form" class="modal__form" action="">
                 <label class=" modal__form__input">
-                    <input class="modal__form__input__name" type="text" placeholder="name">
-                    <input class="modal__form__input__email" type="text" placeholder="email">
+                    <div class="input">
+                        <input class="modal__form__input__name" type="text" placeholder="name">
+                        <span id="nameError" class="modal__form__input__error">this field is reqiured*</span>
+                    </div>
+                    <div class="input">
+                        <input class="modal__form__input__email" type="text" placeholder="email">
+                        <span id="emailError" class="modal__form__input__error__email">this field is reqiured*</span>
+                    </div>
                 </label>
                 <div class="modal__form__plan">
                     <h3 class="modal__form__plan__guest">Your plan?</h3>
-                    <label class="modal__form__plan__choice">
-                        <input class="modal__form__plan__choice__tick checkbox" type="checkbox">
+                    <label for="accept" class="modal__form__plan__choice">
+                        <input class="modal__form__plan__choice__tick checkbox" id="accept" type="checkbox">
                         <div class="modal__form__plan__choice__inner standart">
                             <div class="modal__form__plan__choice__inner__mark tick"><img src="./img/tick.svg" alt=""></div>
-                            <div class="modal__form__plan__choice__inner__name">Standart</div>
+                            <div id="standart--name" class="modal__form__plan__choice__inner__name">Standart</div>
                         </div>
                     </label>
-                    <label class="modal__form__plan__choice">
-                        <input class="modal__form__plan__choice__tick checkbox" type="checkbox">
+                    <label for="premium" class="modal__form__plan__choice">
+                        <input id="premium" class="modal__form__plan__choice__tick checkbox" type="checkbox">
                         <div class="modal__form__plan__choice__inner premium">
                             <div class="modal__form__plan__choice__inner__mark tick"><img src="./img/tick.svg" alt=""></div>
-                            <div class="modal__form__plan__choice__inner__name">Premium</div>
+                            <div id="premium--name" class="modal__form__plan__choice__inner__name">Premium</div>
                         </div>
                     </label>
-                    <label class="modal__form__plan__choice">
-                        <input class="modal__form__plan__choice__tick checkbox" type="checkbox">
+                    <label for="life" class="modal__form__plan__choice">
+                        <input id="life" class="modal__form__plan__choice__tick checkbox" type="checkbox">
                         <div class="modal__form__plan__choice__inner life">
                             <div class="modal__form__plan__choice__inner__mark tick">
                                 <img src="./img/tick.svg" alt="">
                             </div>
-                            <div class="modal__form__plan__choice__inner__name">Lifetime</div>
+                            <div id="life--name" class="modal__form__plan__choice__inner__name">Lifetime</div>
                         </div>
                     </label>
                 </div>
@@ -358,8 +364,8 @@
                         </div>
                         <div class="modal__form__plan__app__info__name">Youtube</div>
                     </label>
-                    <label class="modal__form__plan__app__info">
-                        <input class="modal__form__plan__app__info__check app__check" type="checkbox">
+                    <label  class="modal__form__plan__app__info">
+                        <input class="modal__form__plan__app__info__check app__check"  type="checkbox">
                         <div class="modal__form__plan__app__info__fake">
                             <img class="modal__form__plan__app__info__fake__tick__blue tick__blue" src="./img/tick-blue.svg" alt="">
                         </div>
@@ -368,8 +374,9 @@
                 </div>
                 <button class="modal__form__button">send</button>
             </form>
-            <div class="modal__loading">
-
+            <div id="loader" class="modal__loading">
+                <img class="modal__loading__loader" src="./img/loader.svg" alt="">
+                <p class="modal__loading__title">Loading...</p>
             </div>
         </div>
     </div>

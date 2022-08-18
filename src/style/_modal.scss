@@ -1,7 +1,7 @@
 
 
 %button-modal{
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,23 +24,27 @@
 }
 
 #modal{
-  position: fixed;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1000;
+
+
+}
   .modal{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 5;
 
     &__container{
+      max-height: 80vh;
+      position: relative;
+      overflow-y: auto;
       width: 506px;
-      height: 815px;
       margin: auto;
-
       background: #FFFFFF;
       border-radius: 4px;
     }
@@ -49,9 +53,8 @@
       justify-content: space-around;
       align-items: center;
       &__title{
-        padding-top: 30px;
-        width: 259px;
-        margin: 0 auto;
+        padding-top: 37px;
+        padding-left: 124px;
         font-family: $font-stack;
         font-style: normal;
         font-weight: 400;
@@ -68,12 +71,18 @@
     &__form{
       margin: 40px auto;
       &__input{
+        .input{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         &__name{
-          margin: 10px 0;
+          margin: 1.5px 0;
           width: 330px;
           height: 42px;
 
@@ -90,8 +99,19 @@
 
           color: #7D7D7D;
         }
+        &__error{
+          display: none;
+          font-family: $font-stack;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+
+          color: #FF5437;
+        }
+
         &__email{
-          margin: 10px 0;
+          margin: 16px 0;
           width: 330px;
           height: 42px;
 
@@ -107,14 +127,26 @@
           text-indent: 20px;
 
           color: #7D7D7D;
+        }
+        &__error__email{
+          display: none;
+          font-family: $font-stack;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          /* identical to box height */
+
+
+          color: #FF5437;
         }
       }
       &__plan{
         margin: 0 auto;
         width: 330px;
         &__guest{
+          margin: 8px 130px;
           width: 100px;
-          margin: 20px auto;
           font-family: $font-stack;
           font-style: normal;
           font-weight: 400;
@@ -161,7 +193,7 @@
           margin: 0 auto;
           width: 273px;
           &__title{
-            margin: 30px 0;
+            margin-top: 42px;
             font-family: $font-stack;
             font-style: normal;
             font-weight: 400;
@@ -174,7 +206,7 @@
             color: #000000;
           }
           &__info{
-            margin: 20px 0;
+            margin: 16px 42px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -217,8 +249,8 @@
         }
       }
       &__button{
-        margin: 20px 140px;
-        padding: 10px 50px;
+        margin: 26px 172px;
+        padding: 10px 64px;
         background: #222222;
         border-radius: 4px;
 
@@ -234,9 +266,40 @@
         color: #FFFFFF;
       }
     }
-  }
+    &__loading{
+      position: absolute;
+      right: 0;
+      bottom: -155px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      &__loader{
+        margin: 0 20px;
+        animation: loader 5s infinite;
+        @keyframes loader {
+          from{
+            transform: rotate(0deg);
+          }
+          to{
+            transform: rotate(360deg);
+          }
+        }
+      }
+      &__title{
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
 
-}
+        color: #7E7E7E;
+      }
+    }
+  }
 
 
 .modal__form__plan__choice__tick:checked ~  .standart{
